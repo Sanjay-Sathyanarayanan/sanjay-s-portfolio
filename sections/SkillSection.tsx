@@ -10,7 +10,7 @@ const SkillSection = () => {
 
     return (
         <section id="skills"
-          className="flex items-center justify-center"
+          className="flex items-center justify-center mt-20"
         >
           
           <div className="flex flex-col gap-20 max-w-[80%] text-center items-center">

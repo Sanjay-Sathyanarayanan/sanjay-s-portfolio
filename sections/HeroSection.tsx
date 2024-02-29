@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <section  id="#about"className="lg:py-16">
+    <section  id="#about"className="md:py-16 md:mt-12">
       <div className="grid grid-cols-1 md:grid-cols-12 px-10">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -28,7 +28,7 @@ const HeroSection = () => {
                 1500,
                 "Mern Stack Developer",
                 1500,
-                "Web 3.0 Enthusiastic ",
+                "Web 3.0 Enthusiast",
                 1500,
               ]}
               wrapper="span"
@@ -51,7 +51,8 @@ exploring the potential of Blockchain technology.
   
             </Link>
             <Link
-              href="/"
+              href="https://drive.google.com/file/d/1VaztPgO6oNIlWq_T_slHuqcVig3QcWu7/view?usp=sharing"
+              target="_blank"
               className="px-1 inline-block py-1 w-full sm:w-fit  text-white mt-3"
             >
               <button className="p-[3px] relative">
