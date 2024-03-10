@@ -4,6 +4,7 @@ import "./globals.css";
 import NavBar from "@/components/NavBar";
 import { Analytics } from "@vercel/analytics/react"
 import Footer from "@/components/Footer";
+import { Toaster } from "react-hot-toast";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -25,6 +26,7 @@ export default function RootLayout({
         <NavBar/>   
         {children}
         <Footer/>
+        <Toaster position="top-center"/>
         <Analytics/>
         </body>
     </html>

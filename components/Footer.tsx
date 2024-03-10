@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Boxes } from "@/components/ui/background-boxes";
-import { cn } from "@/utils/cn";
+import { cn } from "@/lib/utils/cn";
 import {  Socials } from "@/constants";
 import Link from "next/link";
 import Image from "next/image";

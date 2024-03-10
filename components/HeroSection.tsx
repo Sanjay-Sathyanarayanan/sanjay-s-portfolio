@@ -51,7 +51,7 @@ exploring the potential of Blockchain technology.
   
             </Link>
             <Link
-              href="https://drive.google.com/file/d/1VaztPgO6oNIlWq_T_slHuqcVig3QcWu7/view?usp=sharing"
+              href="https://drive.google.com/file/d/1cEGxrwGs0US1TxIa6BlmeVTB99iT4I2s/view?usp=sharing"
               target="_blank"
               className="px-1 inline-block py-1 w-full sm:w-fit  text-white mt-3"
             >
