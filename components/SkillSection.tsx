@@ -36,7 +36,7 @@ const SkillSection = () => {
               }}
               speed={5000}
               modules={[Autoplay]}
-              className="max-w-[80%]"
+              className="max-w-[80%] "
             >
               {SkillData.map((skill, index) => (
                 <SwiperSlide key={index}>

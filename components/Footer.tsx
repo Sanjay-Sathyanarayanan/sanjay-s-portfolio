@@ -2,7 +2,7 @@
 import React from "react";
 import { Boxes } from "@/components/ui/background-boxes";
 import { cn } from "@/utils/cn";
-import { NavLinks, Socials } from "@/constants";
+import {  Socials } from "@/constants";
 import Link from "next/link";
 import Image from "next/image";
 
