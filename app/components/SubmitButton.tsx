@@ -4,6 +4,8 @@ import { useFormStatus } from "react-dom";
 import { IoMdPaperPlane } from "react-icons/io";
 const SubmitButton = () => {
     const { pending } = useFormStatus();
+    
+    
   return (
     <button className=" relative" disabled={pending}>
     <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-indigo-300 rounded-lg" />

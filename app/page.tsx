@@ -1,8 +1,7 @@
-import ContactSection from "@/components/ContactSection";
-import HeroSection from "@/components/HeroSection";
-import ProjectSection from "@/components/ProjectSection";
-import SkillSection from "@/components/SkillSection";
-
+import ContactSection from "@/app/components/ContactSection";
+import HeroSection from "@/app/components/HeroSection";
+import ProjectSection from "@/app/components/ProjectSection";
+import SkillSection from "@/app/components/SkillSection";
 
 export default function Home() {
   return (

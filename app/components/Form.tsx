@@ -1,23 +1,30 @@
-"use client";
-import React from "react";
-import TextAnimation from "@/components/ui/text-animation";
-import { sendEmail } from "@/lib/actions/sendEmail";
+"use client"
+import { sendEmail } from "@/app/lib/actions/sendEmail";
 import toast from "react-hot-toast";
 import SubmitButton from "./SubmitButton";
+import { formValidation } from "@/app/lib/validations/form";
 
 
-const ContactSection = () => {
-  
-  
-
+const Form = () => {
   return (
-    <section id="contact">
-      <div className=" flex flex-col gap-3 items-center justify-around px-12 lg:flex-row mt-24 mb-12">
-        <TextAnimation />
-        <form
+    <form
           className="bg-slate-100 flex flex-col gap-5 px-5 py-12 rounded-md w-[340px] md:w-[540px] "
           action={async (formData: FormData) => {
-            console.log("Running on client", formData);
+            const data ={
+              name: formData.get("name"),
+              email: formData.get("email"),
+              message: formData.get("message")
+            };
+            const result = formValidation.safeParse(data);
+            if(!result.success){
+             const errorMessages =  result.error?.issues;
+             errorMessages.forEach(message => {toast.error(message.message)
+              
+             })
+             
+             
+              return;
+            }
             await sendEmail(formData);
             toast.success("Message sent successfully!");
           }}
@@ -43,9 +50,7 @@ const ContactSection = () => {
           ></textarea>
           <SubmitButton/>
         </form>
-      </div>
-    </section>
-  );
-};
+  )
+}
 
-export default ContactSection;
+export default Form

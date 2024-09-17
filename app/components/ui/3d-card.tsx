@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "@/lib/utils/cn";
+import { cn } from "@/app/lib/utils/cn";
 
 import React, {
   createContext,

@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <section  id="#about"className="md:py-16 md:mt-12">
+    <section id="#about" className="md:py-16 md:mt-12">
       <div className="grid grid-cols-1 md:grid-cols-12 px-10">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}

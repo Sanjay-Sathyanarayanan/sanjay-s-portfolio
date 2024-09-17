@@ -1,11 +1,12 @@
 "use server";
 import { Resend } from "resend";
-import ContactFormEmail from "@/components/ui/ContactFormEmail";
+import ContactFormEmail from "@/app/components/ui/ContactFormEmail";
 const resend = new Resend(process.env.RESEND_API_KEY);
 export const sendEmail = async (formData: FormData) => {
   const name = formData.get("name");
   const email = formData.get("email");
   const message = formData.get("message");
+  
 
   await resend.emails.send({
     from: "onboarding@resend.dev",
